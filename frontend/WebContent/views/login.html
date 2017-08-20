@@ -1,0 +1,21 @@
+<span style="color:red">{{error.message}}</span>
+{{logoutMessage}}
+<div class="container">
+<form>
+<div class="form-group">
+<div class="input-group">
+<input type="text" ng-model="user.username" class="form-control" id="userLogin" placeholder="Enter Login Id Here" >
+<label for="userLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+</div>
+</div>
+<div class="form-group">
+<div class="input-group">
+<input type="password" ng-model="user.pass" class="form-control" id="userPassword" placeholder="Enter Password Here">
+<label for="userPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+</div>
+</div>
+<div class="form-group">
+<input type="submit" ng-click="validateUser()">
+</div>
+</form>
+</div>
